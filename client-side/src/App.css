@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+};
+
+body{
+    height: 100vh;
+    width: 100%;
+    transition: all 1s;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+};
+
+.container{
+    background: grey;
+}
+
+.container > .dashboard_two{
+    display: flex;
+    margin-top: 50px;
+}
+
+.lineChar{
+width: 90%; 
+height: 55vh;
+border: 3px solid grey; 
+padding: 12px; 
+border-radius: 9px; 
+margin-left: 40px;
+margin-top: 20px;
+}
+
+.lineChar > h2 {
+    margin-bottom: 20px;
+}
+
+.charBar{
+width: 710px; 
+border: 3px solid grey;
+padding: 12px; 
+border-radius: 9px; 
+margin-left:38px;
+}
+
+.charBar > h2 {
+    margin-bottom: 20px;
+}
+
+.roundBar{
+width: 450px; 
+border: 3px solid grey;
+padding: 12px; 
+border-radius: 9px; 
+margin-left:50px;
+background-color: rgb(226, 241, 240);
+}
+
+@media screen and (max-width: 800px){
+
+    .container > .dashboard_two{
+        display: grid;
+    }
+
+    .lineChar{
+        width: 92%; 
+        margin-left: 20px;
+        }
+
+    .charBar{
+        width: 450px; 
+        height: 45vh;
+        margin-left:20px;
+        margin-bottom: 20px;
+        }
+        
+        .roundBar{
+        width: 450px; 
+        margin-left:20px;
+        }
+}

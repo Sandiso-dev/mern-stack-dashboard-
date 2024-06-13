@@ -11,8 +11,9 @@ connectDB();
 
 const app = express();
 app.use(cors());
-app.use(express.json);
+app.use(express.json());
 app.use('/api', dataRoutes);
+
 
 //IMPORT FUNCTION TO MIGRATE THE DATA IN THE GIVEN JSON FILE
 const importData = async () => {
@@ -27,6 +28,10 @@ const importData = async () => {
 };
 
 //importData();
+
+//app.get('/test', (req, res) => {
+//    res.send('Server is working!!')
+//});
 
 const PORT = process.env.PORT || 5000;
 console.log(`MONGO URL: ${process.env.MONGO_URI}`);
